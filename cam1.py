@@ -3,11 +3,11 @@ from imread_from_url import imread_from_url
 from YOLOv6 import YOLOv6
 
 # Initialize YOLOv6 object detector
-model_path = "D:/Kodingan/ONNX-YOLOv6-Object-Detection-main/bestmodel.onnx"
+model_path = "D:/Kodingan/nyc/bestmodel.onnx"
 yolov6_detector = YOLOv6(model_path, conf_thres=0.35, iou_thres=0.5)
 
 # Read image from local
-image_path = 'D:/Kodingan/ONNX-YOLOv6-Object-Detection-main/img/2.jpeg'
+image_path = 'D:/Kodingan/nyc/img/2.jpeg'
 img = cv2.imread(image_path)
 
 # Detect Objects
